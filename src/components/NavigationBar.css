@@ -1,0 +1,21 @@
+.navigation-bar {
+  background-color: #EED971FF;
+  display: flex;
+}
+.navigation-bar__button {
+  display: inline-flex;
+  
+  height: 2.5rem;
+  width: 6rem;
+  cursor: pointer;
+  background-color: #FFBE7BFF;
+  color: white;
+  font-size: 1rem;
+  align-items: center;
+  border: 0;
+  font-weight: bold;
+}
+.navigation-bar__button:hover {
+  background-color: #FFA351FF;
+  transition-duration: 0.4s;
+}

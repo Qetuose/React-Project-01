@@ -3,8 +3,8 @@
     flex-direction: column;
     width: 5.5rem;
     height: 5.5rem;
-    border: 1px solid #ececec;
-    background-color: #2a2a2a;
+    border: 1px solid hsl(0, 0%, 93%);
+    background-color: #FFA351FF;
     color: white;
     border-radius: 12px;
     align-items: center;

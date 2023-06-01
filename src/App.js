@@ -1,4 +1,5 @@
 import Expenses from "./components/Expenses";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   const expenses = [
@@ -11,7 +12,7 @@ function App() {
   ];
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NavigationBar></NavigationBar>
       <Expenses items={expenses} />
     </div>
   );
