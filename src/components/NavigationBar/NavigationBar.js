@@ -1,6 +1,6 @@
 import "./NavigationBar.css";
 
-function NavigationBar() {
+const NavigationBar = () => {
   return (
     <div className="navigation-bar">
       <button className="navigation-bar__button">First</button>

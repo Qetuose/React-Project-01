@@ -1,10 +1,9 @@
 .navigation-bar {
   background-color: #EED971FF;
-  display: flex;
+  display: block;
 }
 .navigation-bar__button {
-  display: inline-flex;
-  
+ 
   height: 2.5rem;
   width: 6rem;
   cursor: pointer;
@@ -19,3 +18,4 @@
   background-color: #FFA351FF;
   transition-duration: 0.4s;
 }
+

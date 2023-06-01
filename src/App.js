@@ -1,7 +1,8 @@
-import Expenses from "./components/Expenses";
-import NavigationBar from "./components/NavigationBar";
+import Expenses from "./components/Expenses/Expenses";
+import NavigationBar from "./components/NavigationBar/NavigationBar";
+import "./components/NavigationBar/NavigationBar.css";
 
-function App() {
+const App = () => {
   const expenses = [
     { title: "Car Insurance", amount: "$300", date: new Date(2023, 1, 23) },
     { title: "Toilet paper", amount: "$3", date: new Date(2021, 2, 28) },
@@ -12,8 +13,12 @@ function App() {
   ];
   return (
     <div>
-      <NavigationBar></NavigationBar>
-      <Expenses items={expenses} />
+      <div>
+        <NavigationBar></NavigationBar>
+      </div>
+      <div>
+        <Expenses items={expenses} />
+      </div>
     </div>
   );
 }
