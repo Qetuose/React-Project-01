@@ -1,4 +1,5 @@
 import "./NavigationBar.css";
+import Card from "../UI/Card";
 
 const NavigationBar = () => {
   return (

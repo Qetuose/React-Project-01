@@ -1,5 +1,6 @@
 import Expenses from "./components/Expenses/Expenses";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
+import NewExpense from "./components/NewExpense/NewExpense";
 import "./components/NavigationBar/NavigationBar.css";
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
   return (
     <div>
       <div>
-        <NavigationBar></NavigationBar>
+        <NavigationBar />
       </div>
       <div>
+        <NewExpense />
         <Expenses items={expenses} />
       </div>
     </div>

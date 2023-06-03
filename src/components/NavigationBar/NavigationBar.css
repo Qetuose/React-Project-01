@@ -1,21 +1,38 @@
 .navigation-bar {
-  background-color: #EED971FF;
-  display: block;
+  background-color: #eed971ff;
+  width: 10%;
+  height: 100vh;
+  font-size: 0.65em;
+  margin-top: -2rem;
+  position: fixed;
+  border-radius: 0 1rem 1rem 0;
+  padding-top: 1rem;
+  
 }
 .navigation-bar__button {
- 
-  height: 2.5rem;
-  width: 6rem;
-  cursor: pointer;
-  background-color: #FFBE7BFF;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #ffbe7bff;
   color: white;
+  border: solid rgba(27, 26, 26, 0.418);
+  border-radius: 1rem;
+  height: 3rem;
+  width: 80%;
+  font-weight: bold;
   font-size: 1rem;
   align-items: center;
-  border: 0;
-  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
 }
 .navigation-bar__button:hover {
-  background-color: #FFA351FF;
+  background-color: #ffa351ff;
   transition-duration: 0.4s;
 }
+@media (max-width: 580px) {
+  .navigation-bar {
 
+  }
+  .navigation-bar__button {
+
+  }
+}
