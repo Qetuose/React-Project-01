@@ -1,13 +1,17 @@
 import "./NavigationBar.css";
-import Card from "../UI/Card";
 
-const NavigationBar = () => {
+const NavigationBar = (props) => {
+
+  const clickHandler = () => {
+     
+  };
+
   return (
     <div className="navigation-bar">
-      <button className="navigation-bar__button">First</button>
-      <button className="navigation-bar__button">Second</button>
-      <button className="navigation-bar__button">Third</button>
-      <button className="navigation-bar__button">Fourth</button>
+      <button onClick={clickHandler}>DashBoard</button>
+      <button>Second</button>
+      <button>Third</button>
+      <button>Fourth</button>
     </div>
   );
 }

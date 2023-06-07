@@ -1,0 +1,11 @@
+.container {
+    padding: 1rem;
+    background-color: #EED971FF;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+}
+.container button {
+    width: 10rem;
+    height: 4rem;
+}
