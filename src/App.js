@@ -1,8 +1,10 @@
+import React, {useState} from "react";
+
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
 
-const App = () => {
+const App = (props) => {
   const expenses = [
     {
       id: "e1",
@@ -28,7 +30,6 @@ const App = () => {
     console.log("In App.js");
     console.log(expense);
   };
-
   return (
     <div>
       <NavigationBar/>
@@ -39,3 +40,4 @@ const App = () => {
 };
 
 export default App;
+ 

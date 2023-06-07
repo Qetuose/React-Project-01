@@ -1,14 +1,14 @@
 import "./NavigationBar.css";
+import App from "../../App";
 
 const NavigationBar = (props) => {
 
-  const clickHandler = () => {
-     
+  const dashboardHandler = (event) => {
   };
 
   return (
     <div className="navigation-bar">
-      <button onClick={clickHandler}>DashBoard</button>
+      <button value='hidden' onClick={dashboardHandler}>DashBoard</button>
       <button>Second</button>
       <button>Third</button>
       <button>Fourth</button>
