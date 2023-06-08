@@ -51,7 +51,7 @@
 .expense-item button:hover {
   background-color: #ffa351ff;
   transition-duration: 0.4s;
-};
+}
 
 @media (min-width: 580px) {
   .expense-item__description {
