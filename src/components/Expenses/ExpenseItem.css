@@ -8,6 +8,10 @@
   border: solid rgba(27, 26, 26, 0.418);
 }
 
+ul {
+  list-style-type: none;
+}
+
 .expense-item__description {
   display: flex;
   flex-direction: column;

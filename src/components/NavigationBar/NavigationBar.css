@@ -13,6 +13,7 @@
   display: block;
 }
 .navigation-bar button {
+  margin-bottom: 0.5rem;
   display: block;
   text-align: center;
   width: 8rem;

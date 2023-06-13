@@ -1,0 +1,23 @@
+.expenses-edit {
+    margin-top: 1rem;
+  display: flex;
+  justify-content: right;
+}
+
+.expenses-edit button {
+  margin-bottom: 0.5rem;
+  text-align: center;
+  width: 8rem;
+  height: 2rem;
+  margin-left: 0.5rem;
+  font-size: 20px;
+  background-color: #ffbe7bff;
+  color: white;
+  border: solid 1px white;
+  border-radius: 1rem;
+}
+
+.expenses-edit button:hover {
+  background-color: #ffa351ff;
+  transition-duration: 0.4s;
+}

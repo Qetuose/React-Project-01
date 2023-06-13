@@ -1,5 +1,6 @@
+import React, {useState} from "react";
+
 import "./NavigationBar.css";
-import App from "../../App";
 
 const NavigationBar = (props) => {
 
