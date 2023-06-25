@@ -3,16 +3,11 @@ import React, {useState } from "react";
 import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 import "./ExpenseItem.css";
+import { VscSaveAs } from "react-icons/vsc";
 import Expenses from "./Expenses";
 import ExpenseEdit from "./ExpenseEdit";
 
-const ExpenseItem = (props) => {
-  const [title, setTitle] = useState(props.title);
-
-  const clickHandler = () => {
-    
-  };
-
+const ExpenseItem = (props, { Editing }) => {
 
   return (
     <Card className="expense-item">
@@ -21,7 +16,7 @@ const ExpenseItem = (props) => {
         <h2>{props.title}</h2>
       </div>
       <div className="expense-item__price">${props.amount}</div>
-      <button onClick={clickHandler}>X</button>
+      {!props.Editing && <VscSaveAs className="expense-item__save-icon" size='1.5rem'/>}
     </Card>
   );
 };

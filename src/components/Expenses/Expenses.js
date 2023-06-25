@@ -4,13 +4,12 @@ import Card from "../UI/Card";
 import ExpensesFilter from "./ExpensesFilter";
 import ExpensesList from "./ExpensesList";
 import ExpensesChart from "./ExpensesChart";
-import "./Expenses.css";
 import ExpenseEdit from "./ExpenseEdit";
+import "./Expenses.css";
 
 const Expenses = (props) => {
   const [fillterdYear, setFillteredYear] = useState("2023");
-  const [isEditing, setIsEditing] = useState(false);
-  const [isEditingDataBack, setIsEditingDataBack] = useState();
+  const [Editing, setEditing] = useState(); 
 
   const filterChangeHandler = (selectedYear) => {
     setFillteredYear(selectedYear);
@@ -19,12 +18,7 @@ const Expenses = (props) => {
   const filteredExpenses = props.items.filter((expense) => {
     return expense.date.getFullYear().toString() === fillterdYear;
   });
-
-  const isEditingHandler = (edit) => {
-    setIsEditing(edit);
-    console.log(edit);
-  };
-  
+  console.log(Editing + 'as');
   return (
     <li>
       <Card className="expenses">
@@ -32,11 +26,10 @@ const Expenses = (props) => {
           selected={fillterdYear}
           onChangeFilter={filterChangeHandler}
         />
-        <button>test</button>
         <ExpensesChart expense={filteredExpenses} />
-        <ExpenseEdit isEditingHandler={isEditingHandler} dataBack={setIsEditingDataBack}/>
-        <ExpensesList items={filteredExpenses} />
-      </Card>
+        <ExpenseEdit setEditing={setEditing} />
+        <ExpensesList items={filteredExpenses} Editing={Editing}/>
+      </Card> 
     </li>
   );
 };

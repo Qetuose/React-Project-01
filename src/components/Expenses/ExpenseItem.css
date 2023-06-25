@@ -57,6 +57,17 @@ ul {
   transition-duration: 0.4s;
 }
 
+.expense-item__save-icon {
+  cursor: pointer;
+  margin-left: 1rem;
+  transition-duration:0.5s;
+}
+
+.expense-item__save-icon:hover {
+  color: white;
+ 
+}
+
 @media (min-width: 580px) {
   .expense-item__description {
     flex-direction: row;
