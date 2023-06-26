@@ -18,7 +18,7 @@ const Expenses = (props) => {
   const filteredExpenses = props.items.filter((expense) => {
     return expense.date.getFullYear().toString() === fillterdYear;
   });
-  console.log(Editing + 'as');
+ 
   return (
     <li>
       <Card className="expenses">
