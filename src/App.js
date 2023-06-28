@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/NewExpense/NewExpense";
 import NavigationBar from "./components/NavigationBar/NavigationBar";
-
 const DUMMY_EXPENSES = [
   {
     id: "e1",
@@ -23,6 +22,37 @@ const DUMMY_EXPENSES = [
     amount: "689",
     date: new Date(2021, 3, 2),
   },
+  {
+    id: "e3",
+    title: "Car repair",
+    amount: "689",
+    date: new Date(2021, 3, 2),
+  },
+  {
+    id: "e3",
+    title: "Car repair",
+    amount: "689",
+    date: new Date(2021, 3, 2),
+  },
+  {
+    id: "e3",
+    title: "Car repair",
+    amount: "689",
+    date: new Date(2021, 3, 2),
+  },
+  {
+    id: "e3",
+    title: "Car repair",
+    amount: "689",
+    date: new Date(2021, 3, 2),
+  },
+  {
+    id: "e3",
+    title: "Car repair",
+    amount: "689",
+    date: new Date(2021, 3, 2),
+  },
+  
 ];
 
 const App = (props) => {

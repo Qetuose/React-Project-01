@@ -1,20 +1,18 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 
+import Card from "../UI/Card";
 import "./NavigationBar.css";
 
 const NavigationBar = (props) => {
-
-  const dashboardHandler = (event) => {
-  };
+  const dashboardHandler = (event) => {};
 
   return (
-    <div className="navigation-bar">
-      <button value='hidden' onClick={dashboardHandler}>DashBoard</button>
-      <button>Second</button>
-      <button>Third</button>
-      <button>Fourth</button>
-    </div>
+    <Card className={'navigation-bar'}>
+      <button>Expenses</button>
+      <button>Planner</button>
+      <button>Statistics</button>
+    </Card>
   );
-}
+};
 
 export default NavigationBar;

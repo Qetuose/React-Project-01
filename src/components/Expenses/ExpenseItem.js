@@ -1,32 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 
 import ExpenseDate from "./ExpenseDate";
+import ExpenesPopup from "./ExpensesPopup";
 import Card from "../UI/Card";
 import "./ExpenseItem.css";
 import { VscSaveAs } from "react-icons/vsc";
 
 const ExpenseItem = (props) => {
+  const [popup, setPopup] = useState();
   let Editing = props.Editing;
-  if (Editing) {
-    return (
-      <Card className="expense-item">
-        <ExpenseDate date={props.date} />
-        <input className="expense-item__input-description" type="text" placeholder={props.title}></input>
-        <input className="expense-item__input-price" type="number" placeholder={props.amount}></input>
-        <VscSaveAs className="expense-item__save-icon" size="1.5rem" />
-      </Card>
-    );
-  } else {
-    return (
-      <Card className="expense-item">
+  
+  return (
+    <div>
+      {popup && <ExpenesPopup/>}
+      <Card className={`expense-item ${Editing ? "expense-item-selected" : ""}`}>
         <ExpenseDate date={props.date} />
         <div className="expense-item__description">
           <h2>{props.title}</h2>
         </div>
         <div className="expense-item__price">${props.amount}</div>
+        {Editing && (
+          <VscSaveAs className="expense-item__save-icon" size="1.5rem" />
+        )}
       </Card>
-    );
-  }
+    </div>
+  );
 };
 
 export default ExpenseItem;

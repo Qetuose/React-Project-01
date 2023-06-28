@@ -1,32 +1,30 @@
 .navigation-bar {
-  background-color: #eed971ff;
-  height: 100%;
-  width: 150px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eed971ff;
+    align-items: center;
+    padding: 10px;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
-.navigation-bar div {
-  padding: 8px;
-  font-size: 24px;
-  display: block;
-}
+
 .navigation-bar button {
-  margin-bottom: 0.5rem;
-  display: block;
-  text-align: center;
-  width: 8rem;
-  height: 2rem;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 20px;
-  background-color: #ffbe7bff;
-  color: white;
-  border: solid 1px white;
-  border-radius: 1rem;
+    color: white;
+    background-color: #ffbe7bff;
+    border: 1px solid;
+    border-color: whitesmoke;
+    border-radius: 12px;
+    width: 10rem;
+    height: 2rem;
+    font-weight: bold;
+    font-size: large;
+    margin-left: 1rem ;
+    margin-right: 1rem;
+    transition-duration: 400ms;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.251);
 }
 .navigation-bar button:hover {
-  background-color: #ffa351ff;
-  transition-duration: 0.4s;
+    transform: scale3d(1.05, 1.05, 1);
+    background-color: #ffa351ff;
 }

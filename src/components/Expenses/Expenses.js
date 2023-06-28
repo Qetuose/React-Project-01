@@ -10,7 +10,6 @@ import "./Expenses.css";
 const Expenses = (props) => {
   const [fillterdYear, setFillteredYear] = useState("2023");
   const [Editing, setEditing] = useState(); 
-
   const filterChangeHandler = (selectedYear) => {
     setFillteredYear(selectedYear);
   };

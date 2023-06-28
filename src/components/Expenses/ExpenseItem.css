@@ -6,6 +6,11 @@
   margin: 1rem 0;
   background-color: #ffbe7bff;
   border: solid rgba(27, 26, 26, 0.418);
+  transition-duration: 400ms;
+}
+.expense-item-selected:hover {
+  transform: scale3d(1.05, 1.05, 1);
+  cursor: pointer;
 }
 
 ul {
