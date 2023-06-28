@@ -7,6 +7,8 @@ body.active-modal {
     display: block;
     margin: 100px auto 0;
     font-size: 18px;
+    height: 500px;
+    width: 500px;
 }
 
 .modal, .overlay {
@@ -30,9 +32,10 @@ body.active-modal {
     line-height: 1.4;
     background: #f1f1f1;
     padding: 14px 28px;
-    border-radius: 3px;
+    border-radius: 1rem;
     max-width: 600px;
     min-width: 300px;
+    min-height: 300px;
 }
 
 .close-modal {
